@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: rgb(53, 50, 50);
+    color: white;
+    border-bottom: 4px solid red;
+}
+
+header h1 a{
+    color: red;
+    text-decoration: none;
+}
+
+header h1 a span{
+    color: white;
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+/* banner css */
+.banner{
+    height: 80vh;
+    background-image: url("images.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    padding: 0 100px;
+}
+
+.banner_text h1{
+    font-size: 50px;
+}
+
+.banner_text p{
+    font-size: 20px;
+}
+
+
+/* subscribe */
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(53, 50, 50);
+    padding: 30px 100px;
+    color: white;
+}
+.subscribe p{
+    font-size: 24px;
+}
+
+.subscribe form{
+    display: flex;
+    gap: 5px;
+}
+
+.subscribe form input{
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    width: 300px;
+}
+
+.subscribe form button{
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+.subscribe form button:hover{
+    background-color: rgb(53, 50, 50);
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+/* ramslar */
+.rasmlar{
+    display: flex;
+    gap: 50px;
+    padding: 50px 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.rasm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* footer */
+
+footer{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p{
+    font-weight: 600;
+}
+@media (max-width: 768px){
+       header ul li{
+        display: none
+    }
+    .container{
+        width: 100vh;
+    }
+    .subscribe p{
+        font-size: 100%;
+    }
+    .rasmlar{
+        flex-direction: column;
+    }
+    .subscribe{
+        flex-direction: column;
+    }
+    .subscribe p{
+        font-size: 120%;
+    }
+}
